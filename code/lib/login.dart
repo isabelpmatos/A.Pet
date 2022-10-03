@@ -39,12 +39,8 @@ class _LoginState extends State<Login> {
             Container(
                 alignment: Alignment.center,
                 padding: const EdgeInsets.all(10),
-                child: const Text(
-                  'ADotPet',
-                  style: TextStyle(
-                      color: Color.fromRGBO(82, 113, 255, 0.4),
-                      fontWeight: FontWeight.w500,
-                      fontSize: 30),
+                child: Image.asset(
+                  'assets/images/A.jpg',
                 )),
 
             Container(
