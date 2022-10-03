@@ -5,28 +5,28 @@ void main() => runApp(const MyApp());
 class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
 
-  static const String _title = 'Sample App';
+  // static const String _title = 'App';
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      title: _title,
+    return const MaterialApp(
+      // title: _title,
       home: Scaffold(
-        appBar: AppBar(title: const Text(_title)),
-        body: const MyStatefulWidget(),
+        // appBar: AppBar(title: const Text(_title)),
+        body: Login(),
       ),
     );
   }
 }
 
-class MyStatefulWidget extends StatefulWidget {
-  const MyStatefulWidget({Key? key}) : super(key: key);
+class Login extends StatefulWidget {
+  const Login({Key? key}) : super(key: key);
 
   @override
-  State<MyStatefulWidget> createState() => _MyStatefulWidgetState();
+  State<Login> createState() => _LoginState();
 }
 
-class _MyStatefulWidgetState extends State<MyStatefulWidget> {
+class _LoginState extends State<Login> {
   TextEditingController nameController = TextEditingController();
   TextEditingController passwordController = TextEditingController();
 
@@ -42,47 +42,45 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
                 child: const Text(
                   'ADotPet',
                   style: TextStyle(
-                      color: Colors.blue,
+                      color: Color.fromRGBO(82, 113, 255, 0.4),
                       fontWeight: FontWeight.w500,
                       fontSize: 30),
                 )),
+
             Container(
-                alignment: Alignment.center,
-                padding: const EdgeInsets.all(10),
-                child: const Text(
-                  'Sign in',
-                  style: TextStyle(fontSize: 20),
-                )),
-            Container(
-              padding: const EdgeInsets.all(10),
-              child: TextField(
-                controller: nameController,
+              padding: const EdgeInsets.fromLTRB(30,10,30,10),
+              child: TextFormField(
                 decoration: const InputDecoration(
-                  border: OutlineInputBorder(),
-                  labelText: 'mail@email.com',
-                ),
+                    label: Text('Email'), hintText: 'email@email.com'),
               ),
             ),
             Container(
-              padding: const EdgeInsets.fromLTRB(10, 10, 10, 0),
-              child: TextField(
+              padding: const EdgeInsets.fromLTRB(30,10,30,10),
+              child: TextFormField(
                 obscureText: true,
                 controller: passwordController,
                 decoration: const InputDecoration(
-                  border: OutlineInputBorder(),
-                    labelText: 'Senha',
+                  labelText: 'Senha',
                 ),
               ),
             ),
-            TextButton(
-              onPressed: () {
-                //forgot password screen
-              },
-              child: const Text('Esqueci minha senha',),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceAround,
+              children: <Widget>[
+                TextButton(
+                  child: const Text(
+                    'Esqueci minha senha',
+                    style: TextStyle(fontSize: 16),
+                  ),
+                  onPressed: () {
+                    //signup screen
+                  },
+                )
+              ],
             ),
             Container(
-                height: 50,
-                padding: const EdgeInsets.fromLTRB(10, 0, 10, 0),
+                height: 70,
+                padding: const EdgeInsets.fromLTRB(30, 20, 30, 15),
                 child: ElevatedButton(
                   child: const Text('LOGIN'),
                   onPressed: () {
@@ -98,7 +96,7 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
                 TextButton(
                   child: const Text(
                     'Cadastre-se',
-                    style: TextStyle(fontSize: 20),
+                    style: TextStyle(fontSize: 16),
                   ),
                   onPressed: () {
                     //signup screen
