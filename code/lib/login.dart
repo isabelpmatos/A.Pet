@@ -39,12 +39,15 @@ class _LoginState extends State<Login> {
             Container(
                 alignment: Alignment.center,
                 padding: const EdgeInsets.all(10),
+                color: Colors.white,
                 child: Image.asset(
                   'assets/images/A.jpg',
+                  height: 300,
                 )),
 
             Container(
               padding: const EdgeInsets.fromLTRB(30,10,30,10),
+              color: Colors.white,
               child: TextFormField(
                 decoration: const InputDecoration(
                     label: Text('Email'), hintText: 'email@email.com'),
@@ -52,6 +55,7 @@ class _LoginState extends State<Login> {
             ),
             Container(
               padding: const EdgeInsets.fromLTRB(30,10,30,10),
+              color: Colors.white,
               child: TextFormField(
                 obscureText: true,
                 controller: passwordController,
