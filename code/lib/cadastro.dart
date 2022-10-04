@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:adotpet/login.dart';
 
-void main() => runApp(const MyApp());
+void main() => runApp(const MyAppCadastro());
 
-class MyApp extends StatelessWidget {
-  const MyApp({Key? key}) : super(key: key);
+class MyAppCadastro extends StatelessWidget {
+  const MyAppCadastro({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -92,6 +93,10 @@ class _SignUpState extends State<SignUp> {
                   onPressed: () {
                     print(nameController.text);
                     print(passwordController.text);
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => MyAppLogin()),
+                    );
                   },
                 )
             ),
@@ -105,7 +110,10 @@ class _SignUpState extends State<SignUp> {
                     style: TextStyle(fontSize: 16),
                   ),
                   onPressed: () {
-                    //signup screen
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => MyAppLogin()),
+                    );
                   },
                 )
               ],
