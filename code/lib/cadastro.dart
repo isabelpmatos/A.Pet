@@ -36,16 +36,14 @@ class _SignUpState extends State<SignUp> {
             Container(
                 alignment: Alignment.center,
                 padding: const EdgeInsets.all(10),
-                child: const Text(
-                  'ADotPet',
-                  style: TextStyle(
-                      color: Colors.blue,
-                      fontWeight: FontWeight.w500,
-                      fontSize: 30),
+                child: Image.asset(
+                  'assets/images/A.jpg',
+                  height: 250,
                 )),
 
             Container(
               padding: const EdgeInsets.fromLTRB(30,10,30,10),
+              color: Colors.white,
               child:  TextFormField(
                 decoration: const InputDecoration(
                     label: Text('Nome'), hintText: ''),
@@ -60,6 +58,7 @@ class _SignUpState extends State<SignUp> {
             ),
             Container(
               padding: const EdgeInsets.fromLTRB(30,10,30,10),
+              color: Colors.white,
               child: TextFormField(
                 decoration: const InputDecoration(
                     label: Text('Email'), hintText: 'email@email.com'),
@@ -67,6 +66,7 @@ class _SignUpState extends State<SignUp> {
             ),
             Container(
               padding: const EdgeInsets.fromLTRB(30,10,30,10),
+              color: Colors.white,
               child: TextFormField(
                 obscureText: true,
                 controller: passwordController,
@@ -77,6 +77,7 @@ class _SignUpState extends State<SignUp> {
             ),
             Container(
               padding: const EdgeInsets.fromLTRB(30,10,30,10),
+              color: Colors.white,
               child: TextFormField(
                 obscureText: true,
                 controller: passwordController,
@@ -88,6 +89,7 @@ class _SignUpState extends State<SignUp> {
             Container(
                 height: 70,
                 padding: const EdgeInsets.fromLTRB(30, 20, 30, 15),
+                color: Colors.white,
                 child: ElevatedButton(
                   child: const Text('CADASTRAR'),
                   onPressed: () {
