@@ -6,14 +6,13 @@ void main() => runApp(const MyAppLogin());
 class MyAppLogin extends StatelessWidget {
   const MyAppLogin({Key? key}) : super(key: key);
 
-  // static const String _title = 'App';
+  static const String _title = 'ADotPet';
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
-      // title: _title,
+    return MaterialApp(
+      title: _title,
       home: Scaffold(
-        // appBar: AppBar(title: const Text(_title)),
         body: Login(),
       ),
     );
