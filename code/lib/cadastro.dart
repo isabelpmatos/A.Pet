@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:adotpet/login.dart';
+import 'package:adotpet/main.dart';
 
 void main() => runApp(const MyAppCadastro());
 
@@ -51,6 +51,7 @@ class _SignUpState extends State<SignUp> {
             ),
             Container(
               padding: const EdgeInsets.fromLTRB(30,10,30,10),
+              color: Colors.white,
               child: TextFormField(
                 decoration: const InputDecoration(
                     label: Text('Telefone'), hintText: ''),
