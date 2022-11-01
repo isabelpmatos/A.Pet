@@ -35,6 +35,7 @@ class _SignUpState extends State<SignUp> {
           children: <Widget>[
             Container(
                 alignment: Alignment.center,
+                color: Colors.white,
                 padding: const EdgeInsets.all(10),
                 child: Image.asset(
                   'assets/images/A.jpg',
@@ -53,6 +54,7 @@ class _SignUpState extends State<SignUp> {
               padding: const EdgeInsets.fromLTRB(30,10,30,10),
               color: Colors.white,
               child: TextFormField(
+                keyboardType: TextInputType.phone,
                 decoration: const InputDecoration(
                     label: Text('Telefone'), hintText: ''),
               ),
