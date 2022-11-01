@@ -80,6 +80,7 @@ class _LoginState extends State<Login> {
             ),
             Container(
                 height: 70,
+                color: Colors.white,
                 padding: const EdgeInsets.fromLTRB(30, 20, 30, 15),
                 child: ElevatedButton(
                   child: const Text('LOGIN'),
