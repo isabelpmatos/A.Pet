@@ -108,7 +108,7 @@ class _SignUpState extends State<SignUp> {
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: <Widget>[
-                const Text('Já possu6i conta?'),
+                const Text('Já possui conta?'),
                 TextButton(
                   child: const Text(
                     'Fazer login',
