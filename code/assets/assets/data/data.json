@@ -1,0 +1,43 @@
+{
+	"producers": {
+		"Rebeca": {
+			"logo": "assets/images/dog_ac3.png",
+			"name": "Rebeca",
+			"description": "Rebeca possui 10 anos, cartão de vacina completo.É um cão muito amavel que adora brincar no parque com bolas e brinquedos.",
+			"distance": "10",
+			"packages": [
+				{"title": "Visita ao veterinário", "description": "Consulta inicial para avaliar estado de saúde do animal.", "price": "120,00", "items":  ["Consulta"]},
+				{"title": "Banho e tosa", "description": "Banho e tosa para a Rebeca ficar cheirosa.", "price": "35,00", "items":  ["Banho", "Tosa"]}
+				]
+		},
+		"Rex": {
+			"logo": "assets/images/cat_dstq10.png",
+			"name": "Rex",
+			"description": "Rex possui 3 anos, cartão de vacina incompleto.É um gato muito amavel que adora carinho na barriga e subir nas cortinas de casa.",
+			"distance": "5",
+			"packages": [
+				{"title": "Visita ao veterinário", "description": "Consulta inicial para avaliar estado de saúde do animal.", "price": "120,00", "items":  ["Consulta"]},
+				{"title": "Banho e tosa", "description": "Banho e tosa para a Rebeca ficar cheirosa.", "price": "35,00", "items":  ["Banho", "Tosa"]}
+			]
+		},
+		"Diana": {
+			"logo": "assets/images/dog_ac3.png",
+			"name": "Diana",
+			"description": "Diana possui 4 anos, cartão de vacina incompleto.É um cachorro muito bravo quando está com fome.",
+			"distance": "25",
+			"packages": [
+				{"title": "Visita ao veterinário", "description": "Consulta inicial para avaliar estado de saúde do animal.", "price": "120,00", "items":  ["Consulta"]},
+				{"title": "Banho e tosa", "description": "Banho e tosa para a Rebeca ficar cheirosa.", "price": "35,00", "items":  ["Banho", "Tosa"]}
+			]
+		}
+	},
+	"favorites": ["Rebeca"],
+	"highlights": [
+		{"name": "Theo", "description": "Adotado - acompanhe", "image": "assets/images/dog_ac1.png"},
+		{"name": "Jorel", "description": "Adotado - acompanhe", "image": "assets/images/dog_ac2.png"}
+	],
+	"spotlights": [
+		{"description": "Princesa", "image": "assets/images/cat_dstq1.png"},
+		{"description": "Bartô", "image": "assets/images/dog_dstq1.png"}
+	]
+}
