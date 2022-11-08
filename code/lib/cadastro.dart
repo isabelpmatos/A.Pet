@@ -79,17 +79,6 @@ class _SignUpState extends State<SignUp> {
               ),
             ),
             Container(
-              padding: const EdgeInsets.fromLTRB(30,10,30,10),
-              color: Colors.white,
-              child: TextFormField(
-                obscureText: true,
-                controller: passwordController,
-                decoration: const InputDecoration(
-                  labelText: 'Confirme a senha',
-                ),
-              ),
-            ),
-            Container(
                 height: 70,
                 padding: const EdgeInsets.fromLTRB(30, 20, 30, 15),
                 color: Colors.white,
