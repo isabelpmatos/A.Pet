@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:adotpet/cadastro.dart';
+import 'package:adotpet/telaPets.dart';
 
 void main() => runApp(const MyAppLogin());
 
@@ -87,6 +88,10 @@ class _LoginState extends State<Login> {
                   onPressed: () {
                     print(nameController.text);
                     print(passwordController.text);
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => MyAppPets()),
+                    );
                   },
                 )
             ),
