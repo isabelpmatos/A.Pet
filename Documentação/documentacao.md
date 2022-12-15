@@ -10,7 +10,7 @@
 
 Professor:
 
-**Ilo Rivero **
+**Ilo Rivero**
 
 ---
 
@@ -61,17 +61,11 @@ O Software que queremos desenvolver, além de ser um facilitador para pessoas en
 
 ## 1.1. Problema
 
-Dentro do contexto citado acima, nos deparamos com alguns problemas:
-
-1. Pessoas as vezes sem condições de comprar um animal.
-2. Pessoas que não conhecem outras nas quais estejam querendo anunciar um pet para adoção.
-3. Dificuldade em encontrar locais para adotar animais.
+Dentro do contexto citado acima, queremos combater a grande quantidade de animais que são maltratados, abandonados e acabam ficando nos abrigos sem nunca terem uma família. 
 
 ## 1.2. Objetivos do trabalho
 
-Nosso propósito é disponibilizar uma plataforma para facilitar a integração de pessoas amantes de pet que querem adotar um animal e incentivar essa prática.
-
-Queremos unir dois grupos de pessoas. As que já possuem a vontade de adotar animais com aquelas que possuem a vontade de doar um animal ou encontrar um lar para algum animal que achou na rua por exemplo.
+Queremos disponibilizar uma plataforma para facilitar que as pessoas encontrem animais para adotar e incentivar essa prática de adoção. Queremos desenvolver um software simples mas que facilite esse processo, para que o abrigo alcance mais pessoas.
 
 ## 1.3. Definições e Abreviaturas
 
@@ -92,7 +86,6 @@ Lista de requisitos funcionais previstos para a aplicação, cada requisito poss
 | RF002  | O sistema deve permitir que um usuário anuncie um pet                                                           | Essencial      |
 | RF003  | O sistema deve permitir que um usuário favorite um pet                                                          | Essencial      |
 | RF004  | O sistema deve permitir que um usuario visualize seus pets favoritados                                          | Essencial      |
-| RF005  | O sistema deve permitir que somente o administrador de um pet editem e excluam o cadastro deste                 | Essencial      |
 | RF006  | O sistema deve permitir que usuários visualizem as informações dos animais                                      | Essencial      |
 
 ## 2.2. Requisitos Não-Funcionais
@@ -115,27 +108,24 @@ As restrições impostas ao projeto que afetam sua arquitetura são :
 
 - O sistema deve utilizar um modelo baseado em Web Service.
 - O sistema deve prover serviços no ambiente móvel.
-- O sistema deve possuir uma implementação do front-end em tecnologias móveis.
+- O sistema deve possuir uma implementação do front-end em Flutter.
 - O sistema deve permitir que múltiplos clientes se conectem a um único servidor e realizem operações de forma concorrente.
 - O sistema deve tratar erros de cliente e de servidor corretamente. Por exemplo: falhas de comunicação, servidor indisponível, timeouts etc. Mostre como esses erros são tratados com estratégias tais como reenvio de mensagens.
 
 ## 2.3. Linguagens Utilizadas
 
-Como linguagens para esse projeto utilizamos o flutter para o desenvolvimento mobile, o backend foi feito em nodeJS e o banco de dados no Firebase.
+Como linguagens para esse projeto utilizamos o flutter para o desenvolvimento frontend do mobile. O backend foi feito em nodeJS e o banco de dados postgres no Firebase.
 
 #3. Modelagem
 
 ## 3.1. Visão de Negócio (Funcionalidades)
 
 1. O sistema deve permitir o cadastro e login de usuários.
-2. O sistema deve permitir que um usuário crie e controle seus pets.
-3. O sistema deve permitir que um usuário favorite um pet.
-4. O sistema deve permitir que um usuário visualize seus pets favoritados.
-5. O sistema deve permitir que um usuário qualquer visualize as informações de um pet.
+2. O sistema deve permitir que um usuário favorite um pet.
+3. O sistema deve permitir que um usuário visualize seus pets favoritados.
+4. O sistema deve permitir que um usuário visualize as informações de um pet.
 
 ### Histórias de Usuário
-
-_Uma história do usuário é uma explicação informal e geral sobre um recurso de software escrito a partir da perspectiva do usuário final, para expressar sua perspectiva. Foram descritas onde cada história possui sua prioridade entre 0 a 5, onde 5 seja menos prioritário. Além disso, as histórias contam com a descrição que corresponde o ponto de vista do usuário em si, o fluxo principal que representa a release que engloba várias histórias semelhantes. As histórias estão ordenadas por prioridade dos requisitos, com indicador único e título._
 
 #### UC01 – Registrar-se
 
