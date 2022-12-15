@@ -22,14 +22,7 @@ _Instituto de Informática e Ciências Exatas – Pontifícia Universidade de Mi
 
 **Resumo**.
 
-Nosso grupo tem como objetivo neste projeto desenvolver uma mobile para auxiliar na divulgação de animais disponiveis para adoção. Nesse contexto temos dois publicos alvos:
-
-1. Pessoas que desejam anunciar um pet para adoção.
-2. Pessoas que desejam adotar um pet.
-
-Na nossa aplicação, os usuários poderão cadastrar os pets, como também demonstrar interesse em algum animal anunciado por outro usuario.
-
-Ao longo do projeto vamos colocar em prática o que estamos aprendendo ao longo do curso e na nossa carreira profissional: tecnologias de programação, metodologias ágeis, gerenciamento de projetos de software, etc.
+Nosso grupo tem como objetivo neste projeto desenvolver uma aplicação mobile para auxiliar na divulgação de animais disponiveis para adoção. Na nossa aplicação, os usuários do abrigo poderão cadastrar os pets. E clientes poderão visualizar os animais disponíveis e selecionar para adoção ou favoritá-los.
 
 ---
 
